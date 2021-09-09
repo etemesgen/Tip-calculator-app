@@ -9,6 +9,7 @@ body{
 p{
     font-weight: 700;
     color: hsl(183, 100%, 15%);
+    font-size: .8rem;
 }
 
 #logo{
@@ -28,15 +29,15 @@ p{
 #bill{
     display: flex;
     justify-content: flex-start;
-    margin-left: 3rem;
+    margin: 2.5rem 0rem 0rem 2rem;
 }
 
 input[type="number"] {  
-    margin-left: -20rem;
+    margin-left: -20.7rem;
     background-color: hsl(189, 41%, 97%); 
-    border: .1rem solid transparent;
-    width: 16rem;
-    height: 2rem;
+    border: .15rem solid transparent;
+    width: 17rem;
+    height: 1.8rem;
     border-radius: .2rem;
     cursor: pointer;
     font-family: 'Space Mono', monospace;
@@ -45,7 +46,7 @@ input[type="number"] {
 }
 
 input[type="number"]:focus { 
-    border: .1rem solid hsl(172, 67%, 45%);
+    border: .15rem solid hsl(172, 67%, 45%);
     outline: none;
 }
 
@@ -66,13 +67,13 @@ input[type=number] {
 }
 
 #dollar{
-    margin: -1.7rem 0rem 0rem -33.7rem;
+    margin: -1.7rem 0rem 0rem -35rem;
 }
 
 #select-tip{
     display: flex;
     justify-content: flex-start;
-    margin: 2rem 0rem 0rem 3rem;
+    margin: 2rem 0rem 0rem 2rem;
 }
 
 #five-percent{
@@ -83,7 +84,7 @@ input[type=number] {
     height: 2.2rem;
     border-radius: .3rem;
     background-color: hsl(183, 100%, 15%);
-    margin: .8rem 0rem 0rem 3rem;
+    margin: .8rem 0rem 0rem 2rem;
     color: hsl(0, 0%, 100%);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
@@ -106,7 +107,7 @@ input[type=number] {
     height: 2.2rem;
     border-radius: .3rem;
     background-color: hsl(183, 100%, 15%);
-    margin: -2.2rem 0rem 0rem 8.7rem;
+    margin: -2.2rem 0rem 0rem 7.7rem;
     color: hsl(0, 0%, 100%);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
@@ -129,7 +130,7 @@ input[type=number] {
     height: 2.2rem;
     border-radius: .3rem;
     background-color: hsl(183, 100%, 15%);
-    margin: -2.2rem 0rem 0rem 14.4rem;
+    margin: -2.2rem 0rem 0rem 13.4rem;
     color: hsl(0, 0%, 100%);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
@@ -152,7 +153,7 @@ input[type=number] {
     height: 2.2rem;
     border-radius: .3rem;
     background-color: hsl(183, 100%, 15%);
-    margin: .8rem 0rem 0rem 3rem;
+    margin: .8rem 0rem 0rem 2rem;
     color: hsl(0, 0%, 100%);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
@@ -175,7 +176,7 @@ input[type=number] {
     height: 2.2rem;
     border-radius: .3rem;
     background-color: hsl(183, 100%, 15%);
-    margin: -2.2rem 0rem 0rem 8.7rem;
+    margin: -2.2rem 0rem 0rem 7.7rem;
     color: hsl(0, 0%, 100%);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
@@ -198,7 +199,7 @@ input[type=number] {
     height: 2.2rem;
     border-radius: .3rem;
     background-color: hsl(189, 41%, 97%);
-    margin: -2.2rem 0rem 0rem 14.4rem;
+    margin: -2.2rem 0rem 0rem 13.4rem;
     color: hsl(183, 100%, 15%);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
@@ -216,24 +217,35 @@ input[type=number] {
     height: 19rem;
     border-radius: .8rem;
     background-color: hsl(183, 100%, 15%);
-    margin: -19rem 0rem 0rem 22rem;
+    margin: -15.5rem 0rem 0rem 22rem;
 }
 
 #number-people{
     display: flex;
     justify-content: flex-start;
-    margin-left: 3rem;
+    margin-left: 2rem;
+}
+
+/*#number-people-amount:focus{
+    border: .15rem solid rgb(221, 52, 52);
+    outline: none;
+}*/
+
+#error{
+    display: flex;
+    color: rgb(221, 52, 52);
+    margin: -1.9rem 0rem 0rem 13rem;
 }
 
 #person{
-    margin: -1.7rem 0rem 0rem -33.7rem;
+    margin: -1.7rem 0rem 0rem -34.5rem;
 }
 
 #tip-amount{
     color: hsl(0, 0%, 100%);
     font-weight: 300;
     font-size: .7rem;
-    margin: 2rem 0rem 0rem 2rem;
+    margin: 2rem 0rem 0rem 1.5rem;
 }
 
 #person1{
@@ -241,6 +253,20 @@ input[type=number] {
     font-weight: 300;
     font-size: .7rem;
     margin: 3rem 0rem 0rem -4.4rem;
+}
+
+#tip-amount-num{
+    position: absolute;
+    color: hsl(172, 67%, 45%);
+    margin: 1.3rem 0rem 0rem 8rem;
+    font-size: 2.3rem;
+}
+
+#total-amount{
+    position: absolute;
+    color: hsl(172, 67%, 45%);
+    margin: 6.3rem 0rem 0rem 8rem;
+    font-size: 2.3rem;
 }
 
 #total{
@@ -265,7 +291,7 @@ input[type=number] {
     height: 2.2rem;
     border-radius: .2rem;
     background-color: hsl(172, 67%, 45%);
-    margin: 15rem 0rem 0rem -3.7rem;
+    margin: 15rem 0rem 0rem -3.2rem;
     color: hsl(0, 0%, 100%);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
