@@ -1,5 +1,11 @@
-let button1 = document.getElementById("five-percent");
+let bill = document.getElementById("bill-amount");
 
-button1.addEventListener("click", () => {
+if(bill.textContent > 50){
+    alert("good");
+}
+
+let fivePercent = document.getElementById("five-percent");
+
+fivePercent.addEventListener("click", () => {
     alert("hello");
 })
