@@ -299,6 +299,7 @@ input[type=number] {
     justify-content: center;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .attribution { font-size: 11px; text-align: center; }
