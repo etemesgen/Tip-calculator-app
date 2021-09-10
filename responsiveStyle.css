@@ -167,6 +167,20 @@
         margin: 2rem 0rem 0rem -4.4rem;
     }
 
+    #money{
+        position: absolute;
+        color: hsl(172, 67%, 45%);
+        margin: .8rem 0rem 0rem 8.5rem;
+        font-size: 2.3rem;
+    }
+
+    #money2{
+        position: absolute;
+        color: hsl(172, 67%, 45%);
+        margin: 4rem 0rem 0rem 8.5rem;
+        font-size: 2.3rem;
+    }
+
     #tip-amount-num{
         position: absolute;
         color: hsl(172, 67%, 45%);
@@ -191,7 +205,7 @@
     #total-amount{
         position: absolute;
         color: hsl(172, 67%, 45%);
-        margin: 4rem 0rem 0rem 9rem;
+        margin: 4rem 0rem 0rem 10rem;
         font-size: 2.3rem;
     }
 

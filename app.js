@@ -20,55 +20,61 @@ function getBill() {
         calculateTipTwentyFivePercent();
         calculateTipFiftyPercent();
         calculateTipCustomPercent();
-        total();
+    //    totalFivePercent();
     }
 
 
     function calculateTipFivePercent(){
         fivePercent.addEventListener("click", () => {
-            tip = tipAmount.innerHTML = "$" + billAmount / 5;
+            tip = tipAmount.innerHTML = Number((billAmount / 5).toFixed(1));
+            totalAmount.innerHTML = +billAmount + tip;
         })
     }
     //calculateTipFivePercent();
 
     function calculateTipTenPercent(){
         tenPercent.addEventListener("click", () => {
-            tip = tipAmount.innerHTML = "$" + billAmount / 10;
+            tip = tipAmount.innerHTML = Number((billAmount / 10).toFixed(1));
+            totalAmount.innerHTML = +billAmount + tip;
         })  
     }
     //calculateTipTenPercent();
 
     function calculateTipFifteenPercent(){
         fifteenPercent.addEventListener("click", () => {
-            tipAmount.innerHTML = "$" + billAmount / 15;
+            tip = tipAmount.innerHTML = Number((billAmount / 15).toFixed(1));
+            totalAmount.innerHTML = +billAmount + tip;
         })
     }
     //calculateTipFifteenPercent();
 
     function calculateTipTwentyFivePercent(){
         twentyFivePercent.addEventListener("click", () => {
-            tipAmount.innerHTML = "$" + billAmount / 25;
+            tip = tipAmount.innerHTML = Number((billAmount / 25).toFixed(1));
+            totalAmount.innerHTML = +billAmount + tip;
         })
     }
     //calculateTipTwentyFivePercent();
 
     function calculateTipFiftyPercent(){
         fiftyPercent.addEventListener("click", () => {
-            tipAmount.innerHTML = "$" + billAmount / 50;
+            tip = tipAmount.innerHTML = Number((billAmount / 50).toFixed(1));
+            totalAmount.innerHTML = +billAmount + tip;
         })
     }
     //calculateTipFiftyPercent();
 
     function calculateTipCustomPercent(){
         customPercent.addEventListener("click", () => {
-            tipAmount.innerHTML = "$" + billAmount / document.querySelector("custom").value;
+            tip = tipAmount.innerHTML = Number((billAmount / document.querySelector("custom").value).toFixed(1));
+            totalAmount.innerHTML = +billAmount + tip;
         })
     }
     //calculateTipCustomPercent();
 
-    function total(){
+  /*  function totalFivePercent(){
         totalAmount.innerHTML = "$" + billAmount + tip;
-    }
+    }*/
     //total();
 }
 
