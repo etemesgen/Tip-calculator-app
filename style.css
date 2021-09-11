@@ -32,6 +32,14 @@ p{
     margin: 2.5rem 0rem 0rem 2rem;
 }
 
+#bill-amount{
+    color: hsl(183, 100%, 15%);
+}
+
+#bill-amount::placeholder{
+    color: hsl(185, 41%, 84%);
+}
+
 input[type="number"] {  
     margin: .2rem 0rem 0rem -20.7rem;
     background-color: hsl(189, 41%, 97%); 
@@ -246,12 +254,12 @@ input[type=number] {
 
 #number-people-amount{
     margin-top: 1.5rem;
+    color: hsl(183, 100%, 15%);
 }
 
-/*#number-people-amount:focus{
-    border: .15rem solid rgb(221, 52, 52);
-    outline: none;
-}*/
+#number-people-amount::placeholder{
+    color: hsl(185, 41%, 84%);
+}
 
 #error{
     display: flex;
@@ -326,9 +334,9 @@ input[type=number] {
     width: 15rem;
     height: 2.2rem;
     border-radius: .2rem;
-    background-color: hsl(172, 67%, 45%);
+    background-color: hsl(183deg, 85%, 26%);
     margin: 15rem 0rem 0rem -3.1rem;
-    color: hsl(0, 0%, 100%);
+    color: hsl(183, 100%, 15%);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     align-items: center;
@@ -336,6 +344,11 @@ input[type=number] {
     border: none;
     cursor: pointer;
     text-decoration: none;
+}
+
+#reset:hover{
+    background-Color : hsl(172, 67%, 45%);
+    color : hsl(183, 100%, 15%);
 }
 
 .attribution { font-size: 11px; text-align: center; }

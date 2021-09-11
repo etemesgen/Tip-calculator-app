@@ -13,6 +13,7 @@ function getBill() {
     billAmount = document.querySelector('#bill-amount').value;
     console.log(billAmount);
 
+
     if(billAmount){
         calculateTipFivePercent();
         calculateTipTenPercent();
@@ -20,8 +21,8 @@ function getBill() {
         calculateTipTwentyFivePercent();
         calculateTipFiftyPercent();
         calculateTipCustomPercent();
-    }
-
+    } 
+    
 
     function calculateTipFivePercent(){
         fivePercent.addEventListener("click", () => {
@@ -80,11 +81,18 @@ function getPeople(){
 
 function getCustomPercent(){
     customPercent = document.querySelector('#custom').value;
-//    customPercent.style.display = "hidden";
     console.log(customPercent);
 
-    document.getElementById("customValue").innerHTML = customPercent + "%";
+    customHide = document.getElementById("customValue").innerHTML = customPercent + "%";
+    
+    if(customHide){
+        customValue.style.color = "transparent";
+    }
 
     return customPercent;
 }
 
+/* Calculation logic
+tip amount = bill * percent / nbpeople  
+total = bill / tip amount
+*/
