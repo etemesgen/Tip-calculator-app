@@ -3,6 +3,7 @@ let tenPercent = document.getElementById("ten-percent");
 let fifteenPercent = document.getElementById("fifteen-percent");
 let twentyFivePercent = document.getElementById("twenty-five-percent");
 let fiftyPercent = document.getElementById("fifty-percent");
+let customValue = document.getElementById("customValue");
 let tipAmount =  document.getElementById("tip-amount-num");
 let totalAmount =  document.getElementById("total-amount");
 let error = document.getElementById("error");
@@ -11,17 +12,6 @@ function getBill() {
     let tip = 0;
     billAmount = document.querySelector('#bill-amount').value;
     console.log(billAmount);
-
-/*    numberPeople = document.querySelector('#number-people-amount').value;
-    console.log(numberPeople);
-
-    if(numberPeople == 0){
-        error.innerHTML = "Can't be zero";
-        numberPeople.style.border = ".15rem solid rgb(221, 52, 52)";
-    }*/
-
-/*    customPercent = document.querySelector('#custom').value;
-    console.log(customPercent);*/
 
     if(billAmount){
         calculateTipFivePercent();
@@ -69,8 +59,8 @@ function getBill() {
     }
 
     function calculateTipCustomPercent(){
-        customPercent.addEventListener("click", () => {
-            tip = tipAmount.innerHTML = Number((billAmount * getCustomPercent()) / getPeople()).toFixed(1);
+        customValue.addEventListener("click", () => {
+            tip = tipAmount.innerHTML = Number((billAmount * getCustomPercent()/100) / getPeople()).toFixed(1);
             totalAmount.innerHTML = (+billAmount / tip).toFixed(1);
         })
     }
@@ -90,7 +80,10 @@ function getPeople(){
 
 function getCustomPercent(){
     customPercent = document.querySelector('#custom').value;
+//    customPercent.style.display = "hidden";
     console.log(customPercent);
+
+    document.getElementById("customValue").innerHTML = customPercent + "%";
 
     return customPercent;
 }

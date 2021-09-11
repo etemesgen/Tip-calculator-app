@@ -209,6 +209,24 @@ input[type=number] {
     cursor: pointer;
 }
 
+#customValue{
+    display: flex;
+    max-width: 100%;
+    border: .1rem solid hsl(183, 100%, 15%);
+    width: 5rem;
+    height: 2.2rem;
+    border-radius: .3rem;
+    background-color: transparent;
+    margin: -2rem 0rem 0rem 15rem;
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 .sub-container{
     display: flex;
     max-width: 100%;
