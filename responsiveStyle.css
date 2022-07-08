@@ -6,7 +6,7 @@
         height: 36rem;
         border-radius: 1.2rem;
         background-color: hsl(0, 0%, 100%);
-        margin: 3rem 0rem 0rem 1.1rem;
+        margin: 3rem auto;
     }
 
     input[type="number"] {  
